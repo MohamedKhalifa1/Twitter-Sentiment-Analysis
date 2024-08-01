@@ -23,15 +23,15 @@ def preprocess_input_text(text, tokenizer, max_len):
     return text_pad
 
 
-with open(f'model/tokenizer.pkl', 'rb') as handle:
+with open(f'models/tokenizer.pkl', 'rb') as handle:
     tokenizer = pickle.load(handle)
-with open('model/label_encoder.pkl', 'rb') as handle:
+with open('models/label_encoder.pkl', 'rb') as handle:
     label_encoder = pickle.load(handle)
-with open('model/gru_model.pkl', 'rb') as handle:
+with open('models/gru_model.pkl', 'rb') as handle:
     gru_model = pickle.load(handle)
-with open('model/rnn_model.pkl', 'rb') as handle:
+with open('models/rnn_model.pkl', 'rb') as handle:
     rnn_model = pickle.load(handle)
-with open('model/lstm_model.pkl', 'rb') as handle:
+with open('models/lstm_model.pkl', 'rb') as handle:
     lstm_model = pickle.load(handle)
 
 max_len = 100

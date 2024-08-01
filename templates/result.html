@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+        <p><strong>Text:</strong> {{ text }}</p>
+        <div class="result">
+            <p><strong>RNN Prediction:</strong> {{ rnn_pred }}</p>
+            <p><strong>LSTM Prediction:</strong> {{ lstm_pred }}</p>
+            <p><strong>GRU Prediction:</strong> {{ gru_pred }}</p>
+        </div>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>

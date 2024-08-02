@@ -40,7 +40,7 @@ twitter_sentiment_analysis/
 
 - Python 3.8+
 - Flask
-- TensorFlow or PyTorch (depending on your model implementation)
+- TensorFlow 
 - Docker
 
 ## Installation
